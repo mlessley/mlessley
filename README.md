@@ -4,16 +4,34 @@ Proven track record engineering telecom-scale systems at Verizon Wireless and XO
 
 **What's here:**
 
-- 🔍 [`pipeline-lens`](https://github.com/mlessley/pipeline-lens) — software supply
-  chain security visualization tool. SBOM/SARIF/provenance ingestion into a Neo4j
-  graph, built on GUAC's attestation-as-node model, orchestrated with Temporal.
-- 🛡️ [`dast-bench`](https://github.com/mlessley/dast-bench) — A Claude Code-assisted evaluation framework for benchmarking dynamic application security testing (DAST) tools.
+- 🔍 [`pipeline-lens`](https://github.com/mlessley/pipeline-lens) — correlates
+  events across the software delivery lifecycle (GitHub → build/scan →
+  deployment) into one queryable record, so "what's running and is it safe"
+  doesn't mean checking three separate systems by hand. In-progress Neo4j
+  graph layer for deeper lineage questions.
+- 🛡️ [`dast-bench`](https://github.com/mlessley/dast-bench) — structured evaluation
+  framework for comparing DAST tools: a versioned criteria taxonomy, CI-driven
+  benchmark scoring against known-vulnerable reference targets, and generated
+  scorecards from a single YAML source of truth — replacing ad hoc tool bake-offs
+  with a repeatable, evidence-backed methodology.
 - 🌐 [`network-ztp`](https://github.com/mlessley/network-ztp) — zero-touch
-  provisioning automation for enterprise network deployments (~5,000 devices),
-  covering bootstrap, provisioning, and drift detection.
-- 🧰 [`devx`](https://github.com/mlessley/devx) — containerized dev sandbox with
-  Claude Code preinstalled; my own AI-assisted engineering workflow tooling.
-- 🤖 [`hybrid-rag-watsonx`](https://github.com/mlessley/doc-bot) — private document intelligence system that dynamically routes RAG queries between local inference and IBM WatsonX for cost and privacy optimization.
+  provisioning for enterprise network deployments (~5,000 devices), covering
+  the full lifecycle: Day 0 bootstrap from factory default, Day 1 Nautobot
+  intent → Ansible provisioning, Day 2 scheduled drift compliance scans.
+  Temporal-orchestrated for durable execution, with human-in-the-loop
+  escalation on drift and a deliberate roll-forward-only recovery model.
+- 🧰 [`devx`](https://github.com/mlessley/devx) — cross-platform (Windows/WSL2,
+  macOS, Linux) containerized dev sandbox with Claude Code preinstalled,
+  volume-native I/O, optional toolchain/service overlays, and multi-instance
+  support — my own reproducible AI-assisted engineering workflow tooling.
+- 🤖 [`hybrid-rag-watsonx`](https://github.com/mlessley/hybrid-rag-watsonx) —
+  private document intelligence system that dynamically routes RAG queries
+  between local M4 inference and IBM Watsonx.ai for cost and privacy
+  optimization.
+- 🔎 [`codebase-rag`](https://github.com/mlessley/codebase-rag) — RAG agent
+  for querying a codebase in natural language: indexes Python repos into
+  ChromaDB, then a LangGraph agent answers questions via a `search_code`
+  tool with file/line-precise retrieval.
 
 
 **Background:** Senior Full-Stack & Systems Engineer focused on production systems, platform automation, and leveraging agentic coding tools to streamline software delivery and maintenance. US Army veteran. Based in the DFW area.
