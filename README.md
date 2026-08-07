@@ -4,6 +4,11 @@ Proven track record engineering telecom-scale systems at Verizon Wireless and XO
 
 **What's here:**
 
+- 🌐 [`network-ztp`](https://github.com/mlessley/network-ztp) — zero-touch 
+  provisioning (ZTP) proof-of-concept for enterprise network device lifecycle 
+  management: durable workflow orchestration across bootstrap, provisioning, and 
+  compliance phases, built on Temporal + Nautobot + Ansible, with human-in-the-loop 
+  escalation on drift and a deliberate roll-forward-only recovery model.
 - 🔍 [`pipeline-lens`](https://github.com/mlessley/pipeline-lens) — correlates
   events across the software delivery lifecycle (GitHub → build/scan →
   deployment) into one queryable record, so "what's running and is it safe"
@@ -14,12 +19,6 @@ Proven track record engineering telecom-scale systems at Verizon Wireless and XO
   benchmark scoring against known-vulnerable reference targets, and generated
   scorecards from a single YAML source of truth — replacing ad hoc tool bake-offs
   with a repeatable, evidence-backed methodology.
-- 🌐 [`network-ztp`](https://github.com/mlessley/network-ztp) — zero-touch
-  provisioning for enterprise network deployments (~5,000 devices), covering
-  the full lifecycle: Day 0 bootstrap from factory default, Day 1 Nautobot
-  intent → Ansible provisioning, Day 2 scheduled drift compliance scans.
-  Temporal-orchestrated for durable execution, with human-in-the-loop
-  escalation on drift and a deliberate roll-forward-only recovery model.
 - 🧰 [`devx`](https://github.com/mlessley/devx) — cross-platform (Windows/WSL2,
   macOS, Linux) containerized dev sandbox with Claude Code preinstalled,
   volume-native I/O, optional toolchain/service overlays, and multi-instance
